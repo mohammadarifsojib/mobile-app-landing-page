@@ -9,7 +9,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2 col-md-2">
                                 <div class="logo">
-                                    <a href="#"><img src="./img/logo/logo.png" alt=""></a>
+                                    <a href="#"><img :src="logo" alt="Logo"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10 col-md-10">
@@ -47,8 +47,10 @@
 </template>
 
 <script setup>
-    import { onMounted } from 'vue'
+    import { onMounted, ref } from 'vue'
     import $ from 'jquery'
+
+    const logo = ref(`./img/logo/logo.png`)
 
     $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
