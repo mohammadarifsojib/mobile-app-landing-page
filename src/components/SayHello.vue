@@ -30,8 +30,8 @@
     const title = ref(`Say Hello To The Collaboration Hub.`)
     const ctaText = ref(`Contact Us`)
     const ctaLink = ref(`#`)
-    const shapeOne = ref(`../../public/img/shape/say-shape-left.png`)
-    const shapeTwo = ref(`../../public/img/shape/say-shape-right.png`)
+    const shapeOne = ref(`./img/shape/say-shape-left.png`)
+    const shapeTwo = ref(`./img/shape/say-shape-right.png`)
 </script>
 <style scoped>
     .say-something-aera {

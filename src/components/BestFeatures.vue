@@ -46,7 +46,7 @@
     import { ref } from 'vue'
     import {bestFeatures} from '../data/bestFeatures.js'
     const title = ref(`Some of the best features Of Our App!`)
-    const featureImg = ref(`../../public//img/shape/best-features.png`)
+    const featureImg = ref(`./img/shape/best-features.png`)
 </script>
 <style scoped>
     .best-features-area {

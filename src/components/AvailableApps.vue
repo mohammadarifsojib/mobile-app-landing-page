@@ -41,11 +41,11 @@
     import {ref} from 'vue'
     const title = ref(`Our App Available For Any Device Download now`)
     const description = ref(`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fug.`)
-    const iosApp = ref(`../../public/img/shape/app_btn1.png`)
-    const androidApp = ref(`../../public/img/shape/app_btn2.png`)
-    const shape = ref(`../../public/img/shape/available-app.png`)
-    const shapeTop = ref(`../../public/img/shape/app-shape-top.png`)
-    const shapeLeft = ref(`../../public/img/shape/app-shape-left.png`)
+    const iosApp = ref(`./img/shape/app_btn1.png`)
+    const androidApp = ref(`./img/shape/app_btn2.png`)
+    const shape = ref(`./img/shape/available-app.png`)
+    const shapeTop = ref(`./img/shape/app-shape-top.png`)
+    const shapeLeft = ref(`./img/shape/app-shape-left.png`)
 </script>
 <style scoped>
 .available-app-area {

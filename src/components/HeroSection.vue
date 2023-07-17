@@ -36,7 +36,7 @@
     const smallHeading = ref(`App Landing Page`)
     const bigHeadding = ref(`Get things done<br>with Appco`)
     const description = ref(`Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusm tempor incididunt ulabore et dolore magna aliqua.`)
-    const heroImg = ref(`../../public//img/hero/hero_right.png`)
+    const heroImg = ref(`./img/hero/hero_right.png`)
     const heroBtnText = ref(`Download`)
     const heroBtnLink = ref(`#`)
 </script>
