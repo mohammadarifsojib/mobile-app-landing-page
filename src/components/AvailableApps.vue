@@ -13,7 +13,9 @@
                                     <a href="#" class="app-btn1">
                                         <img :src="iosApp" alt="">
                                     </a>
-                                    <a href="#" class="app-btn2"><img :src="androidApp" alt=""></a>
+                                    <a href="#" class="app-btn2">
+                                        <img :src="androidApp" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>

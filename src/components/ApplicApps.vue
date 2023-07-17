@@ -28,7 +28,7 @@
     </div>
 </template>
 <script setup>
-    import { applicApps } from '../data/ApplicApps';
+    import { applicApps } from '../data/applicApps.js';
     import { ref } from 'vue';
     const title = `Applic Apps<br> Screenshot`
     const desc = `Lorem ipsum dolor sit amet, consecadipiscing elit, sed do eiusmod tempor incididunt ut ore et dolore magna aliqua. Quis ipsum suspendisse gravida. Risus commodo viverra maecenasan lacus vel facilisis.`
