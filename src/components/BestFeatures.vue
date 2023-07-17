@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Best Features Start -->
-        <section class="best-features-area section-padd4">
+        <section class="best-features-area section-padd4" id="feature">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-xl-8 col-lg-10">
@@ -9,70 +9,44 @@
                         <div class="row">
                             <div class="col-lg-10 col-md-10">
                                 <div class="section-tittle">
-                                    <h2>Some of the best features Of Our App!</h2>
+                                    <h2 v-html="title"></h2>
                                 </div>
                             </div>
                         </div>
                         <!-- Section caption -->
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6">
+                            
+                             <div v-for="feature in bestFeatures" :key="feature.id" class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="single-features mb-70">
                                     <div class="features-icon">
-                                        <span class="flaticon-support"></span>
+                                        <span class="flaticon-support">
+                                            <i :class="feature.icon"></i>
+                                        </span>
                                     </div>
                                     <div class="features-caption">
-                                        <h3>Easy to Costomize</h3>
-                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+                                        <h3>{{ feature.title }}</h3>
+                                        <p v-html="feature.desc"></p>
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
-                                    </div>
-                                    <div class="features-caption">
-                                        <h3>Extreme Security</h3>
-                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
-                                    </div>
-                                    <div class="features-caption">
-                                        <h3>Customer Support</h3>
-                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
-                                    </div>
-                                    <div class="features-caption">
-                                        <h3>Creative Design</h3>
-                                        <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Shpe -->
             <div class="features-shpae d-none d-lg-block">
-                <img src="../../public//img/shape/best-features.png" alt="">
+                <img :src="featureImg" alt="">
             </div>
         </section>
         <!-- Best Features End -->
     </div>
 </template>
 <script setup>
-
+    import { ref } from 'vue'
+    import {bestFeatures} from '../data/bestFeatures.js'
+    const title = ref(`Some of the best features Of Our App!`)
+    const featureImg = ref(`../../public//img/shape/best-features.png`)
 </script>
 <style scoped>
     .best-features-area {
