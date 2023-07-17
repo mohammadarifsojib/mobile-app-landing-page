@@ -46,7 +46,7 @@
 </template>
 <script setup>
     import { ref } from 'vue';
-    import { pricing } from '../data/Pricing.js'
+    import { pricing } from '../data/pricing.js'
     const title = ref(`Choose Your Very Best Pricing Plan.`)
 </script>
 <style scoped>
