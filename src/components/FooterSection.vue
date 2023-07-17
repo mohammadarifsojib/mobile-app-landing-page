@@ -11,7 +11,7 @@
                   <div class="single-footer-caption mb-30">
                        <!-- logo -->
                       <div class="footer-logo">
-                          <a href="index.html"><img src="./img/logo/logo2_footer.png" alt=""></a>
+                          <a href="#"><img :src="footerLogo" alt="Logo"></a>
                       </div>
                       <div class="footer-tittle">
                           <div class="footer-pera">
@@ -90,7 +90,8 @@ Copyright &copy;{{ new Date().getFullYear() }} All rights reserved | This templa
     </div>
 </template>
 <script setup>
-
+    import {ref} from 'vue'
+    const footerLogo = ref(`./img/logo/logo2_footer.png`)
 </script>
 <style scoped>
     .footer-area .footer-logo {
